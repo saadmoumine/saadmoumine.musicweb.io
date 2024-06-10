@@ -156,7 +156,7 @@ const instruments = {
     "Laura Williams": ["Piano", "Flute", "Violin"],
     "Sarah Davis": ["Piano", "Flute", "Saxophone"],
     "Michael Brown": ["Saxophone", "Guitar", "Drums"],
-    "David Lee": ["Piano", "Drums", "Violin"]
+    "David Lee": ["Saxophone", "Drums", "Violin"]
 };
 
 function updatePrice() {
@@ -204,7 +204,7 @@ document.getElementById('bookingForm').addEventListener('submit', function(event
     if (validateForm()) {
         const firstName = document.getElementById('firstName').value;
         const lastName = document.getElementById('lastName').value;
-        const email = document.getElementById('email').value;
+        const email = document.getElementById('email1').value;
         const subject = document.getElementById('subject').value;
         const instructor = document.getElementById('instructor').value;
         const type = document.querySelector('input[name="type"]:checked').value;
