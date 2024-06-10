@@ -1,0 +1,702 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('../images/background.png'); /* Adjust the path if needed */
+    background-position: right center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+
+
+#Home{
+    padding-top: 59px;
+}
+
+.home-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.bottom-box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    /* Adjust the height as needed */
+    background-color: #333;
+    /* Change background color as needed */
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    /* Optional shadow for effect */
+    z-index: 1;
+}
+
+/* Home */
+
+
+.nav-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', serif;
+}
+
+.rounded-pill {
+    width: 60px;
+    height: 60px;
+}
+
+
+.rounded-pill {
+    width: 40px; /* Adjust the profile image size */
+    height: 40px;
+}
+
+.containerbox {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    height: 80px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    border: 3px solid #c0392b;
+}
+
+ul.navbar-nav::before,
+ul.navbar-nav::after {
+    content: '\1F3B5';
+    /* Adding musical notes */
+    font-size: 24px;
+    margin: 0 10px;
+    color: #c0392b;
+}
+
+
+.background {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button {
+    background-color: #FFD700;
+    /* Gold */
+    color: #0d1b2a;
+    /* Deep Blue */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.welcome {
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.welcome h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+.welcome p {
+    font-size: 1.5em;
+}
+
+
+.background::after {
+    content: '🎵 🎶 🎷 🎸 🎻 🎹 🎼';
+    font-size: 5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.2);
+    animation: float 6s ease-in-out infinite;
+    white-space: nowrap;
+}
+
+/* Home */
+
+/*About us*/
+.text-box {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.text-box p {
+    color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* About Us Section */
+
+
+#About-us .container-t {
+    color: #FFD700; /* Gold */
+}
+
+
+#About-us .text-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#About-us .text-box p {
+    color: #000000;
+}
+
+#About-us #left,
+#About-us #right {
+    color: #FFD700;
+    /* Gold */
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#About-us #left:hover,
+#About-us #right:hover {
+    color: #FFC300;
+    /* Slightly lighter Gold */
+}
+
+#About-us .card{
+    width: 300px;
+    height: 450px;
+    perspective: 1000px;
+}
+
+
+/*About us*/
+
+/*Our Team*/
+
+.card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    text-align: center;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-front {
+    background: linear-gradient(135deg, #6eb4ff, #7873f5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo-img{
+    width: 200px;
+    height: auto;
+    text-align: left;
+}
+
+.card-back {
+    background: #333;
+    color: white;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.card-image {
+    width: 70%;
+    height: 50%;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.card-title {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.card-description {
+    margin: 10px 0 20px;
+    font-size: 0.95em;
+    line-height: 1.6em;
+    color: #fff;
+}
+
+.card-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #FFD700;
+    /* Gold */
+    color: #333;
+    /* Dark Gray */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.card-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Music Notes Animation for Card Front */
+.card-content::before,
+.card-content::after,
+.card-content .note {
+    content: '♪ ♫ ♬ ♭ ♮';
+    position: absolute;
+    font-size: 2rem;
+    color: #fff;
+    opacity: 0;
+    animation: floatUp 5s linear infinite;
+}
+
+.card-content::before {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.card-content::after {
+    left: 50%;
+    animation-delay: 2.5s;
+}
+
+/* Music Notes Animation for Card Back */
+.card-back .card-content::before,
+.card-back .card-content::after {
+    content: '♪ ♫ ♬ ♭ ♮';
+    position: absolute;
+    font-size: 2rem;
+    color: #FFD700;
+    opacity: 0;
+    animation: floatUp 5s linear infinite;
+    z-index: -1;
+}
+
+.card-back .card-content::before {
+    left: 20%;
+    animation-delay: 1.5s;
+}
+
+.card-back .card-content::after {
+    left: 50%;
+    animation-delay: 4s;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(50%);
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+/*Our Team*/
+
+/*Our Service*/
+
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    z-index: 1;
+}
+
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child {
+    left: -22px;
+}
+
+.wrapper i:last-child {
+    right: -22px;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 15px;
+}
+
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+}
+
+.carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    height: 400px;
+    list-style: none;
+    cursor: pointer;
+    flex-direction: column;
+    border-radius: 15px;
+    background: #333;
+    border: 1px solid #FFD700;
+    /* Gold */
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+
+.carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+.carousel .card span {
+    color: #6A6D78;
+    font-size: 1.31rem;
+}
+
+@media screen and (max-width: 0px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 3) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
+
+/* Services Section */
+
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #FFD700;
+    /* Gold */
+}
+
+#Services, #About-us, #Contact-us {
+    background: rgba(0, 0, 0, 0.7);
+    
+}
+
+#About-us .container-t{
+    color: #FFD700;
+}
+
+#About-us .button{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #FFD700;
+    /* Gold */
+    color: #333;
+    /* Dark Gray */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#Services .card {
+    background: #333;
+    border: 1px solid #FFD700;
+    /* Gold */
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+#Services .card:hover {
+    transform: scale(1.0);
+}
+
+#Services .card-image {
+    width: 100%;
+    height: 70%;
+    border-bottom: 1px solid #FFD700;
+    /* Gold */
+}
+
+
+#Services, #About-us .card-title {
+    font-size: 1.5rem;
+    color: #FFD700;
+    /* Gold */
+}
+
+#Services, #About-us .card-description {
+    font-size: 1rem;
+    color: #ecf0f1;
+}
+
+#Services .card-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #FFD700;
+    /* Gold */
+    color: #333;
+    /* Dark Gray */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#Services .card-button:hover {
+    background: #FFC300;
+    /* Slightly lighter Gold */
+}
+
+#Services #left,
+#Services #right {
+    color: #FFD700;
+    /* Gold */
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#Services #left:hover,
+#Services #right:hover {
+    color: #FFC300;
+    /* Slightly lighter Gold */
+}
+
+
+/*Our Service*/
+
+/*Contact us*/
+.contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+.contact-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/*Contact us*/
+
+/* Booking */
+.booking-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.booking-box {
+    text-align: left;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.booking-form label {
+    font-weight: 500;
+}
+
+.booking-form select, .booking-form input[type="date"], .booking-form input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.confirmation-message {
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    padding: 10px;
+    border-radius: 5px;
+    color: #3c763d;
+}
+
+.booking-form button[type="submit"] {
+    background-color: #4070F4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form button[type="submit"]:hover {
+    background-color: #265DF2;
+}
+/* Booking */
