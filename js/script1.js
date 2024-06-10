@@ -199,7 +199,7 @@ document.getElementById('from').addEventListener('change', updatePrice);
 document.getElementById('to').addEventListener('change', updatePrice);
 document.getElementById('level').addEventListener('change', updatePrice);
 
-document.getElementById('bookingForm').addEventListener('submit', function(event) {
+document.getElementById('bookingForm').addEventListener('submit', function (event) {
     event.preventDefault();
     if (validateForm()) {
         const firstName = document.getElementById('firstName').value;
@@ -212,7 +212,7 @@ document.getElementById('bookingForm').addEventListener('submit', function(event
         const day = document.getElementById('day').value;
         const from = document.getElementById('from').value;
         const to = document.getElementById('to').value;
-        
+
         const totalPrice = calculatePrice(level, from, to);
         document.getElementById('price').textContent = `${totalPrice} $`;
 
@@ -253,7 +253,7 @@ function validateForm() {
     const day = document.getElementById('day').value;
     const from = document.getElementById('from').value;
     const to = document.getElementById('to').value;
-    
+
     if (!firstName || !lastName || !email || !subject || !instructor || !type || !level || !day || !from || !to) {
         alert('Please fill in all required fields.');
         return false;
@@ -347,3 +347,14 @@ document.querySelectorAll('.cta-button').forEach(button => {
     });
 });
 
+function showPopover() {
+    $('#sendMessageButton').popover({
+        trigger: 'focus',
+        content: 'Message Sent',
+        placement: 'right'
+    });
+    $('#sendMessageButton').popover('show');
+    setTimeout(function () {
+        $('#sendMessageButton').popover('hide');
+    }, 2000);
+}
