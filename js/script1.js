@@ -110,7 +110,7 @@ function initializeCarousel(wrapperSelector, carouselSelector) {
     const autoPlay = () => {
         if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
         // Autoplay the carousel after every 4000 ms
-        timeoutId = setTimeout(() => simulateDrag(firstCardWidth), 400000);
+        timeoutId = setTimeout(() => simulateDrag(firstCardWidth), 5000);
 
     };
     autoPlay();
